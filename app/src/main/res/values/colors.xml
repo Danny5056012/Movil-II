@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="danger_red">#FFB00020</color>
+
+    <!-- Identidad visual (light) -->
+    <color name="brand_primary">#FF1E3A8A</color>
+    <color name="brand_secondary">#FF0EA5E9</color>
+    <color name="brand_surface">#FFF6F9FF</color>
+    <color name="brand_on_surface">#FF0B1220</color>
+    <color name="brand_outline">#1F0B1220</color>
+</resources>

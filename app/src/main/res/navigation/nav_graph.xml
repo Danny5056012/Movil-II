@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.autodrivemanagermvvm.ui.fragment.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_carListFragment"
+            app:destination="@id/carListFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.autodrivemanagermvvm.ui.fragment.RegisterFragment"
+        android:label="Registro" />
+
+    <fragment
+        android:id="@+id/carListFragment"
+        android:name="com.example.autodrivemanagermvvm.ui.fragment.CarListFragment"
+        android:label="Vehículos">
+        <action
+            android:id="@+id/action_carListFragment_to_carRegisterFragment"
+            app:destination="@id/carRegisterFragment" />
+        <action
+            android:id="@+id/action_carListFragment_to_carDetailFragment"
+            app:destination="@id/carDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/carRegisterFragment"
+        android:name="com.example.autodrivemanagermvvm.ui.fragment.CarRegisterFragment"
+        android:label="Registrar">
+        <action
+            android:id="@+id/action_carRegisterFragment_to_carListFragment"
+            app:destination="@id/carListFragment"
+            app:popUpTo="@id/carListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/carDetailFragment"
+        android:name="com.example.autodrivemanagermvvm.ui.fragment.CarDetailFragment"
+        android:label="Detalle">
+        <argument
+            android:name="carId"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>
